@@ -1,0 +1,26 @@
+{
+    "planets": [
+      {
+        "name": "TRAPPIST-1d",
+        "radius": 0.77,
+        "orbital_period": 18.4,
+        "biosignature_score": 0.92,
+        "top_features": ["CH4", "CO2", "H2O"]
+      },
+      {
+        "name": "Kepler-186f",
+        "radius": 1.1,
+        "orbital_period": 129.9,
+        "biosignature_score": 0.87,
+        "top_features": ["O3", "CH4", "CO2"]
+      },
+      {
+        "name": "LHS 1140b",
+        "radius": 1.7,
+        "orbital_period": 24.7,
+        "biosignature_score": 0.76,
+        "top_features": ["O2", "H2O", "CO2"]
+      }
+    ]
+  }
+  
