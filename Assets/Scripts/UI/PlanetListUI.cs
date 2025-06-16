@@ -9,6 +9,7 @@ public class PlanetListUI : MonoBehaviour
     public Transform contentParent;              // Content object in Scroll View
     public PlanetInfoUI infoUI;                  // Reference to detail UI
     public PlanetSystem[] planetSystems;         // Loaded in from manager
+    public ScreenManager screenManager; 
 
     public void PopulateList(PlanetSystem[] systems)
     {
@@ -34,6 +35,7 @@ public class PlanetListUI : MonoBehaviour
                 PlanetData captured = planet; // Capture in closure
                 button.onClick.AddListener(() => {
                     infoUI.DisplayPlanet(captured);
+                    screenManager.ShowPlanetInfo();
                 });
             }
         }
