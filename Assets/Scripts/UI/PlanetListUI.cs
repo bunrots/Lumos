@@ -1,43 +1,39 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
 public class PlanetListUI : MonoBehaviour
 {
-    public GameObject buttonPrefab;              // The PlanetButton prefab
-    public Transform contentParent;              // Content object in Scroll View
-    public PlanetInfoUI infoUI;                  // Reference to detail UI
-    public PlanetSystem[] planetSystems;         // Loaded in from manager
-    public ScreenManager screenManager; 
+    public GameObject buttonPrefab;
+    public Transform contentParent;
+    public PlanetInfoUI infoUI;
+    public ScreenManager screenManager;
 
-    public void PopulateList(PlanetSystem[] systems)
+    public PlanetData[] planets;
+
+    public void PopulateList(PlanetData[] loadedPlanets)
     {
-        planetSystems = systems;
+        planets = loadedPlanets;
 
-        // Clear old buttons if any
+        // Clear previous entries
         // foreach (Transform child in contentParent)
         // {
         //     Destroy(child.gameObject);
         // }
 
-        // Create a button for each planet in each system
-        foreach (PlanetSystem system in systems)
+        foreach (PlanetData planet in planets)
         {
-            foreach (PlanetData planet in system.planets)
-            {
-                GameObject buttonObj = Instantiate(buttonPrefab, contentParent);
-                TMP_Text buttonText = buttonObj.GetComponentInChildren<TMP_Text>();
-                buttonText.text = $"{planet.name}";
+            GameObject buttonObj = Instantiate(buttonPrefab, contentParent);
+            TMP_Text buttonText = buttonObj.GetComponentInChildren<TMP_Text>();
+            buttonText.text = planet.Planet_ID;
 
-                Button button = buttonObj.GetComponent<Button>();
-                // Debug.Log($"Button created for {planet.name} at position: {buttonObj.GetComponent<RectTransform>().anchoredPosition}");
-                PlanetData captured = planet; // Capture in closure
-                button.onClick.AddListener(() => {
-                    infoUI.DisplayPlanet(captured);
-                    screenManager.ShowPlanetInfo();
-                });
-            }
+            Button button = buttonObj.GetComponent<Button>();
+            PlanetData captured = planet;
+            button.onClick.AddListener(() =>
+            {
+                infoUI.DisplayPlanet(captured);
+                screenManager.ShowPlanetInfo();
+            });
         }
     }
 }

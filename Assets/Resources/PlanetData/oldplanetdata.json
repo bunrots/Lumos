@@ -1,0 +1,94 @@
+{
+  "systems": [
+    {
+      "name": "TRAPPIST-1",
+      "planets": [
+        {
+          "name": "TRAPPIST-1c",
+          "radius": 1.1,
+          "orbital_period": 2.4,
+          "biosignature_score": 0.45,
+          "top_features": ["CO2", "O2", "CH4"]
+        },
+        {
+          "name": "TRAPPIST-1d",
+          "radius": 0.77,
+          "orbital_period": 4.0,
+          "biosignature_score": 0.92,
+          "top_features": ["CH4", "CO2", "H2O"]
+        },
+        {
+          "name": "TRAPPIST-1e",
+          "radius": 0.92,
+          "orbital_period": 6.1,
+          "biosignature_score": 0.89,
+          "top_features": ["H2O", "CH4", "CO2"]
+        }
+      ]
+    },
+    {
+      "name": "Kepler-186",
+      "planets": [
+        {
+          "name": "Kepler-186f",
+          "radius": 1.1,
+          "orbital_period": 129.9,
+          "biosignature_score": 0.87,
+          "top_features": ["O3", "CH4", "CO2"]
+        },
+        {
+          "name": "Kepler-186b",
+          "radius": 1.0,
+          "orbital_period": 3.9,
+          "biosignature_score": 0.52,
+          "top_features": ["CO", "O2", "N2"]
+        },
+        {
+          "name": "Kepler-186c",
+          "radius": 1.2,
+          "orbital_period": 7.2,
+          "biosignature_score": 0.48,
+          "top_features": ["CH4", "H2O", "CO2"]
+        }
+      ]
+    },
+    {
+      "name": "LHS 1140",
+      "planets": [
+        {
+          "name": "LHS 1140b",
+          "radius": 1.7,
+          "orbital_period": 24.7,
+          "biosignature_score": 0.76,
+          "top_features": ["O2", "H2O", "CO2"]
+        }
+      ]
+    },
+    {
+      "name": "TOI-700",
+      "planets": [
+        {
+          "name": "TOI-700d",
+          "radius": 1.1,
+          "orbital_period": 37.4,
+          "biosignature_score": 0.83,
+          "top_features": ["CH4", "O3", "H2O"]
+        },
+        {
+          "name": "TOI-700e",
+          "radius": 0.95,
+          "orbital_period": 27.8,
+          "biosignature_score": 0.80,
+          "top_features": ["O2", "CO2", "H2O"]
+        },
+        {
+          "name": "TOI-700c",
+          "radius": 1.4,
+          "orbital_period": 16.0,
+          "biosignature_score": 0.58,
+          "top_features": ["CO", "CH4", "H2O"]
+        }
+      ]
+    }
+  ]
+}

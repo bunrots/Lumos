@@ -4,28 +4,34 @@ public class PlanetManager : MonoBehaviour {
     public PlanetInfoUI ui;
     public PlanetListUI listUI;
 
-    private PlanetSystem[] systems;
+    private PlanetData[] planets;
 
     void Start() {
-        LoadPlanetSystems();
+        LoadPlanets();
     }
 
-    void LoadPlanetSystems() {
+    void LoadPlanets() {
         TextAsset json = Resources.Load<TextAsset>("PlanetData/planetdata");
         if (json == null) {
             Debug.LogError("Could not find planetdata.json in Resources/PlanetData/");
             return;
         }
 
-        PlanetSystemList systemList = JsonUtility.FromJson<PlanetSystemList>(json.text);
-        systems = systemList.systems;
+        string wrappedJson = "{\"planets\":" + json.text + "}";
+        PlanetList planetList = JsonUtility.FromJson<PlanetList>(wrappedJson);
+        planets = planetList.planets;
 
-        if (systems != null && systems.Length > 0 && systems[0].planets.Length > 0) {
-            ui.DisplayPlanet(systems[0].planets[0]);
-            listUI.PopulateList(systems);
+        if (planets != null && planets.Length > 0) {
+            if (ui != null)
+                ui.DisplayPlanet(planets[0]);
+            else
+                Debug.LogError("PlanetInfoUI reference is not assigned in PlanetManager!");
+            if (listUI != null)
+                listUI.PopulateList(planets);
+            else
+                Debug.LogError("PlanetListUI reference is not assigned in PlanetManager!");
         } else {
-            Debug.LogWarning("No systems or planets found!");
+            Debug.LogWarning("No planets found!");
         }
     }
 }
-

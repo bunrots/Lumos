@@ -1,94 +1,227 @@
-{
-  "systems": [
-    {
-      "name": "TRAPPIST-1",
-      "planets": [
-        {
-          "name": "TRAPPIST-1c",
-          "radius": 1.1,
-          "orbital_period": 2.4,
-          "biosignature_score": 0.45,
-          "top_features": ["CO2", "O2", "CH4"]
-        },
-        {
-          "name": "TRAPPIST-1d",
-          "radius": 0.77,
-          "orbital_period": 4.0,
-          "biosignature_score": 0.92,
-          "top_features": ["CH4", "CO2", "H2O"]
-        },
-        {
-          "name": "TRAPPIST-1e",
-          "radius": 0.92,
-          "orbital_period": 6.1,
-          "biosignature_score": 0.89,
-          "top_features": ["H2O", "CH4", "CO2"]
-        }
-      ]
-    },
-    {
-      "name": "Kepler-186",
-      "planets": [
-        {
-          "name": "Kepler-186f",
-          "radius": 1.1,
-          "orbital_period": 129.9,
-          "biosignature_score": 0.87,
-          "top_features": ["O3", "CH4", "CO2"]
-        },
-        {
-          "name": "Kepler-186b",
-          "radius": 1.0,
-          "orbital_period": 3.9,
-          "biosignature_score": 0.52,
-          "top_features": ["CO", "O2", "N2"]
-        },
-        {
-          "name": "Kepler-186c",
-          "radius": 1.2,
-          "orbital_period": 7.2,
-          "biosignature_score": 0.48,
-          "top_features": ["CH4", "H2O", "CO2"]
-        }
-      ]
-    },
-    {
-      "name": "LHS 1140",
-      "planets": [
-        {
-          "name": "LHS 1140b",
-          "radius": 1.7,
-          "orbital_period": 24.7,
-          "biosignature_score": 0.76,
-          "top_features": ["O2", "H2O", "CO2"]
-        }
-      ]
-    },
-    {
-      "name": "TOI-700",
-      "planets": [
-        {
-          "name": "TOI-700d",
-          "radius": 1.1,
-          "orbital_period": 37.4,
-          "biosignature_score": 0.83,
-          "top_features": ["CH4", "O3", "H2O"]
-        },
-        {
-          "name": "TOI-700e",
-          "radius": 0.95,
-          "orbital_period": 27.8,
-          "biosignature_score": 0.80,
-          "top_features": ["O2", "CO2", "H2O"]
-        },
-        {
-          "name": "TOI-700c",
-          "radius": 1.4,
-          "orbital_period": 16.0,
-          "biosignature_score": 0.58,
-          "top_features": ["CO", "CH4", "H2O"]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "Planet_ID": "Sim_001",
+    "Sim_SNR": 3,
+    "Labels": [
+      { "key": "CH4", "value": 1 },
+      { "key": "O3", "value": 1 },
+      { "key": "H2O", "value": 0 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.62 },
+      { "key": "O3", "value": 0.58 },
+      { "key": "H2O", "value": 0.31 }
+    ],
+    "Overall_Interest": true
+  },
+  {
+    "Planet_ID": "Sim_002",
+    "Sim_SNR": 7,
+    "Labels": [
+      { "key": "CH4", "value": 1 },
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 0 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.99 },
+      { "key": "O3", "value": 0.07 },
+      { "key": "H2O", "value": 0.44 }
+    ],
+    "Overall_Interest": false
+  },
+  {
+    "Planet_ID": "Sim_003",
+    "Sim_SNR": 10,
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 1 },
+      { "key": "H2O", "value": 1 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.31 },
+      { "key": "O3", "value": 0.84 },
+      { "key": "H2O", "value": 0.62 }
+    ],
+    "Overall_Interest": true
+  },
+  {
+    "Planet_ID": "Sim_004",
+    "Sim_SNR": 5,
+    "Labels": [
+      { "key": "CH4", "value": 1 },
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 1 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.96 },
+      { "key": "O3", "value": 0.04 },
+      { "key": "H2O", "value": 0.83 }
+    ],
+    "Overall_Interest": true
+  },
+  {
+    "Planet_ID": "Sim_005",
+    "Sim_SNR": 10,
+    "Labels": [
+      { "key": "CH4", "value": 1 },
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 1 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.93 },
+      { "key": "O3", "value": 0.23 },
+      { "key": "H2O", "value": 0.77 }
+    ],
+    "Overall_Interest": true
+  },
+  {
+    "Planet_ID": "Sim_006",
+    "Sim_SNR": 10,
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 1 },
+      { "key": "H2O", "value": 0 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.04 },
+      { "key": "O3", "value": 0.77 },
+      { "key": "H2O", "value": 0.43 }
+    ],
+    "Overall_Interest": false
+  },
+  {
+    "Planet_ID": "Sim_007",
+    "Sim_SNR": 2,
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 1 },
+      { "key": "H2O", "value": 1 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.5 },
+      { "key": "O3", "value": 0.9 },
+      { "key": "H2O", "value": 0.96 }
+    ],
+    "Overall_Interest": true
+  },
+  {
+    "Planet_ID": "Sim_008",
+    "Sim_SNR": 10,
+    "Labels": [
+      { "key": "CH4", "value": 1 },
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 0 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.55 },
+      { "key": "O3", "value": 0.01 },
+      { "key": "H2O", "value": 0.46 }
+    ],
+    "Overall_Interest": false
+  },
+  {
+    "Planet_ID": "Sim_009",
+    "Sim_SNR": 10,
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 0 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.3 },
+      { "key": "O3", "value": 0.42 },
+      { "key": "H2O", "value": 0.47 }
+    ],
+    "Overall_Interest": false
+  },
+  {
+    "Planet_ID": "Sim_010",
+    "Sim_SNR": 5,
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 1 },
+      { "key": "H2O", "value": 0 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.17 },
+      { "key": "O3", "value": 0.93 },
+      { "key": "H2O", "value": 0.45 }
+    ],
+    "Overall_Interest": false
+  },
+  {
+    "Planet_ID": "Sim_011",
+    "Sim_SNR": 5,
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 0 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.1 },
+      { "key": "O3", "value": 0.33 },
+      { "key": "H2O", "value": 0.22 }
+    ],
+    "Overall_Interest": false
+  },
+  {
+    "Planet_ID": "Sim_012",
+    "Sim_SNR": 2,
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 1 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.38 },
+      { "key": "O3", "value": 0.13 },
+      { "key": "H2O", "value": 0.95 }
+    ],
+    "Overall_Interest": false
+  },
+  {
+    "Planet_ID": "Sim_013",
+    "Sim_SNR": 3,
+    "Labels": [
+      { "key": "CH4", "value": 1 },
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 1 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.7 },
+      { "key": "O3", "value": 0.41 },
+      { "key": "H2O", "value": 0.97 }
+    ],
+    "Overall_Interest": true
+  },
+  {
+    "Planet_ID": "Sim_014",
+    "Sim_SNR": 5,
+    "Labels": [
+      { "key": "CH4", "value": 1 },
+      { "key": "O3", "value": 1 },
+      { "key": "H2O", "value": 1 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.88 },
+      { "key": "O3", "value": 0.69 },
+      { "key": "H2O", "value": 0.53 }
+    ],
+    "Overall_Interest": true
+  },
+  {
+    "Planet_ID": "Sim_015",
+    "Sim_SNR": 3,
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 1 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.06 },
+      { "key": "O3", "value": 0.24 },
+      { "key": "H2O", "value": 0.76 }
+    ],
+    "Overall_Interest": false
+  }
+]

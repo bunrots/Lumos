@@ -1,8 +1,23 @@
-[System.Serializable]
+using System;
+using System.Collections.Generic;
+
+[Serializable]
+public class KeyValueInt {
+    public string key;
+    public int value;
+}
+
+[Serializable]
+public class KeyValueFloat {
+    public string key;
+    public float value;
+}
+
+[Serializable]
 public class PlanetData {
-    public string name;
-    public float radius;
-    public float orbital_period;
-    public float biosignature_score;
-    public string[] top_features;
+    public string Planet_ID;
+    public int Sim_SNR;
+    public KeyValueInt[] Labels;
+    public KeyValueFloat[] Probabilities;
+    public bool Overall_Interest;
 }
