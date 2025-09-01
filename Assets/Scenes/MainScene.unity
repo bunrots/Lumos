@@ -886,7 +886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 5
-    m_Right: 0
+    m_Right: 15
     m_Top: 15
     m_Bottom: 15
   m_ChildAlignment: 0
@@ -3221,6 +3221,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400221747}
   m_CullTransparentMesh: 1
+--- !u!23 &1499686275 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6783694727180219386, guid: 9ea45ca671e8043acbd010c894c4b719, type: 3}
+  m_PrefabInstance: {fileID: 145382043}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1532313571
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,7 +3261,7 @@ MonoBehaviour:
   probsText: {fileID: 521662501}
   interestText: {fileID: 1992204582}
   descriptionText: {fileID: 1846044141}
-  planetImage: {fileID: 0}
+  planetRenderer: {fileID: 1499686275}
   spectrumImage: {fileID: 1183170231}
 --- !u!4 &1532313573
 Transform:

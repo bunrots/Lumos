@@ -23,6 +23,6 @@ public class PlanetData {
 
     // New fields for description and file names for textures/spectra
     public string Description;
-    public string TextureName;
-    public string SpectrumName;
+    public string Texture;        // e.g. "trappist1e_texture" (no extension necessary)
+    public string SpectrumImage;  // e.g. "trappist1e_spectrum" (no extension necessary)
 }
