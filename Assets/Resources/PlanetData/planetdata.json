@@ -1,227 +1,129 @@
 [
   {
-    "Planet_ID": "Sim_001",
-    "Sim_SNR": 3,
+    "Planet_ID": "TRAPPIST-1b",
+    "Sim_SNR": 10,
     "Labels": [
-      { "key": "CH4", "value": 1 },
-      { "key": "O3", "value": 1 },
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 0 },
       { "key": "H2O", "value": 0 }
     ],
     "Probabilities": [
-      { "key": "CH4", "value": 0.62 },
-      { "key": "O3", "value": 0.58 },
-      { "key": "H2O", "value": 0.31 }
+      { "key": "CH4", "value": 0.05 },
+      { "key": "O3", "value": 0.10 },
+      { "key": "H2O", "value": 0.07 }
     ],
-    "Overall_Interest": true
+    "Overall_Interest": false,
+    "Description": "A hot, tidally locked terrestrial planet orbiting extremely close to its star. JWST observations suggest little to no atmosphere and a dayside temperature near 500 K." ,
+    "Texture": "trappist1b_texture.png",
+    "SpectrumImage": "trappist1b_spectrum.png"
   },
   {
-    "Planet_ID": "Sim_002",
+    "Planet_ID": "TRAPPIST-1d",
+    "Sim_SNR": 8,
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 0 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.20 },
+      { "key": "O3", "value": 0.25 },
+      { "key": "H2O", "value": 0.30 }
+    ],
+    "Overall_Interest": false,
+    "Description": "A rocky world smaller than Earth, with estimated equilibrium temperatures (~258 K) and signs of a volatile layer—possibly oceans or ice under a thin atmosphere.",
+    "Texture": "trappist1d_texture.png",
+    "SpectrumImage": "trappist1d_spectrum.png"
+  },
+  {
+    "Planet_ID": "TRAPPIST-1e",
+    "Sim_SNR": 9,
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 0 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.15 },
+      { "key": "O3", "value": 0.35 },
+      { "key": "H2O", "value": 0.40 }
+    ],
+    "Overall_Interest": true,
+    "Description": "Earth-sized and situated in the habitable zone. Similar mass and radius to Earth, potentially rocky with an atmosphere not dominated by hydrogen—one of the most promising candidates for habitability.",
+    "Texture": "trappist1e_texture.png",
+    "SpectrumImage": "trappist1e_spectrum.png"
+  },
+  {
+    "Planet_ID": "TRAPPIST-1f",
     "Sim_SNR": 7,
     "Labels": [
-      { "key": "CH4", "value": 1 },
+      { "key": "CH4", "value": 0 },
       { "key": "O3", "value": 0 },
       { "key": "H2O", "value": 0 }
     ],
     "Probabilities": [
-      { "key": "CH4", "value": 0.99 },
+      { "key": "CH4", "value": 0.10 },
+      { "key": "O3", "value": 0.20 },
+      { "key": "H2O", "value": 0.35 }
+    ],
+    "Overall_Interest": true,
+    "Description": "A slightly larger planet than Earth, also in the habitable zone. Likely rocky with speculative water content, but atmospheric details remain unknown.",
+    "Texture": "trappist1f_texture.png",
+    "SpectrumImage": "trappist1f_spectrum.png"
+  }
+  ,
+  {
+    "Planet_ID": "TRAPPIST-1c",
+    "Sim_SNR": 6,
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 0 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.03 },
       { "key": "O3", "value": 0.07 },
-      { "key": "H2O", "value": 0.44 }
+      { "key": "H2O", "value": 0.05 }
     ],
-    "Overall_Interest": false
+    "Overall_Interest": false,
+    "Description": "A hotter, rocky planet possibly resembling Venus. Observations suggest little atmosphere has been detected.",
+    "Texture": "trappist1c_texture.png",
+    "SpectrumImage": "trappist1c_spectrum.png"
   },
   {
-    "Planet_ID": "Sim_003",
-    "Sim_SNR": 10,
+    "Planet_ID": "TRAPPIST-1g",
+    "Sim_SNR": 7,
     "Labels": [
       { "key": "CH4", "value": 0 },
-      { "key": "O3", "value": 1 },
-      { "key": "H2O", "value": 1 }
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 0 }
     ],
     "Probabilities": [
-      { "key": "CH4", "value": 0.31 },
-      { "key": "O3", "value": 0.84 },
-      { "key": "H2O", "value": 0.62 }
+      { "key": "CH4", "value": 0.12 },
+      { "key": "O3", "value": 0.18 },
+      { "key": "H2O", "value": 0.38 }
     ],
-    "Overall_Interest": true
+    "Overall_Interest": true,
+    "Description": "Larger than Earth and within the habitable zone, TRAPPIST-1g is possibly water-rich and cooler than TRAPPIST-1e.",
+    "Texture": "trappist1g_texture.png",
+    "SpectrumImage": "trappist1g_spectrum.png"
   },
   {
-    "Planet_ID": "Sim_004",
+    "Planet_ID": "TRAPPIST-1h",
     "Sim_SNR": 5,
     "Labels": [
-      { "key": "CH4", "value": 1 },
+      { "key": "CH4", "value": 0 },
       { "key": "O3", "value": 0 },
-      { "key": "H2O", "value": 1 }
+      { "key": "H2O", "value": 0 }
     ],
     "Probabilities": [
-      { "key": "CH4", "value": 0.96 },
+      { "key": "CH4", "value": 0.02 },
       { "key": "O3", "value": 0.04 },
-      { "key": "H2O", "value": 0.83 }
+      { "key": "H2O", "value": 0.09 }
     ],
-    "Overall_Interest": true
-  },
-  {
-    "Planet_ID": "Sim_005",
-    "Sim_SNR": 10,
-    "Labels": [
-      { "key": "CH4", "value": 1 },
-      { "key": "O3", "value": 0 },
-      { "key": "H2O", "value": 1 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.93 },
-      { "key": "O3", "value": 0.23 },
-      { "key": "H2O", "value": 0.77 }
-    ],
-    "Overall_Interest": true
-  },
-  {
-    "Planet_ID": "Sim_006",
-    "Sim_SNR": 10,
-    "Labels": [
-      { "key": "CH4", "value": 0 },
-      { "key": "O3", "value": 1 },
-      { "key": "H2O", "value": 0 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.04 },
-      { "key": "O3", "value": 0.77 },
-      { "key": "H2O", "value": 0.43 }
-    ],
-    "Overall_Interest": false
-  },
-  {
-    "Planet_ID": "Sim_007",
-    "Sim_SNR": 2,
-    "Labels": [
-      { "key": "CH4", "value": 0 },
-      { "key": "O3", "value": 1 },
-      { "key": "H2O", "value": 1 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.5 },
-      { "key": "O3", "value": 0.9 },
-      { "key": "H2O", "value": 0.96 }
-    ],
-    "Overall_Interest": true
-  },
-  {
-    "Planet_ID": "Sim_008",
-    "Sim_SNR": 10,
-    "Labels": [
-      { "key": "CH4", "value": 1 },
-      { "key": "O3", "value": 0 },
-      { "key": "H2O", "value": 0 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.55 },
-      { "key": "O3", "value": 0.01 },
-      { "key": "H2O", "value": 0.46 }
-    ],
-    "Overall_Interest": false
-  },
-  {
-    "Planet_ID": "Sim_009",
-    "Sim_SNR": 10,
-    "Labels": [
-      { "key": "CH4", "value": 0 },
-      { "key": "O3", "value": 0 },
-      { "key": "H2O", "value": 0 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.3 },
-      { "key": "O3", "value": 0.42 },
-      { "key": "H2O", "value": 0.47 }
-    ],
-    "Overall_Interest": false
-  },
-  {
-    "Planet_ID": "Sim_010",
-    "Sim_SNR": 5,
-    "Labels": [
-      { "key": "CH4", "value": 0 },
-      { "key": "O3", "value": 1 },
-      { "key": "H2O", "value": 0 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.17 },
-      { "key": "O3", "value": 0.93 },
-      { "key": "H2O", "value": 0.45 }
-    ],
-    "Overall_Interest": false
-  },
-  {
-    "Planet_ID": "Sim_011",
-    "Sim_SNR": 5,
-    "Labels": [
-      { "key": "CH4", "value": 0 },
-      { "key": "O3", "value": 0 },
-      { "key": "H2O", "value": 0 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.1 },
-      { "key": "O3", "value": 0.33 },
-      { "key": "H2O", "value": 0.22 }
-    ],
-    "Overall_Interest": false
-  },
-  {
-    "Planet_ID": "Sim_012",
-    "Sim_SNR": 2,
-    "Labels": [
-      { "key": "CH4", "value": 0 },
-      { "key": "O3", "value": 0 },
-      { "key": "H2O", "value": 1 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.38 },
-      { "key": "O3", "value": 0.13 },
-      { "key": "H2O", "value": 0.95 }
-    ],
-    "Overall_Interest": false
-  },
-  {
-    "Planet_ID": "Sim_013",
-    "Sim_SNR": 3,
-    "Labels": [
-      { "key": "CH4", "value": 1 },
-      { "key": "O3", "value": 0 },
-      { "key": "H2O", "value": 1 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.7 },
-      { "key": "O3", "value": 0.41 },
-      { "key": "H2O", "value": 0.97 }
-    ],
-    "Overall_Interest": true
-  },
-  {
-    "Planet_ID": "Sim_014",
-    "Sim_SNR": 5,
-    "Labels": [
-      { "key": "CH4", "value": 1 },
-      { "key": "O3", "value": 1 },
-      { "key": "H2O", "value": 1 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.88 },
-      { "key": "O3", "value": 0.69 },
-      { "key": "H2O", "value": 0.53 }
-    ],
-    "Overall_Interest": true
-  },
-  {
-    "Planet_ID": "Sim_015",
-    "Sim_SNR": 3,
-    "Labels": [
-      { "key": "CH4", "value": 0 },
-      { "key": "O3", "value": 0 },
-      { "key": "H2O", "value": 1 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.06 },
-      { "key": "O3", "value": 0.24 },
-      { "key": "H2O", "value": 0.76 }
-    ],
-    "Overall_Interest": false
+    "Overall_Interest": false,
+    "Description": "The outermost planet of the system, very cold and possibly ice-rich. It may not be able to retain a thick atmosphere.",
+    "Texture": "trappist1h_texture.png",
+    "SpectrumImage": "trappist1h_spectrum.png"
   }
 ]

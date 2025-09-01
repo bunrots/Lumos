@@ -22,6 +22,7 @@ public class PlanetManager : MonoBehaviour {
         planets = planetList.planets;
 
         if (planets != null && planets.Length > 0) {
+            Debug.Log($"Loaded planet {planets[0].Planet_ID} with description: {planets[0].Description}");
             if (ui != null)
                 ui.DisplayPlanet(planets[0]);
             else

@@ -20,4 +20,9 @@ public class PlanetData {
     public KeyValueInt[] Labels;
     public KeyValueFloat[] Probabilities;
     public bool Overall_Interest;
+
+    // New fields for description and file names for textures/spectra
+    public string Description;
+    public string TextureName;
+    public string SpectrumName;
 }

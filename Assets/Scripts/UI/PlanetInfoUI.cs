@@ -7,6 +7,9 @@ public class PlanetInfoUI : MonoBehaviour {
     public TMP_Text labelsText;
     public TMP_Text probsText;
     public TMP_Text interestText;
+    public TMP_Text descriptionText;
+    public UnityEngine.UI.RawImage planetImage;
+    public UnityEngine.UI.RawImage spectrumImage;
 
     public void DisplayPlanet(PlanetData data) {
         if (data == null)
@@ -56,5 +59,22 @@ public class PlanetInfoUI : MonoBehaviour {
             $"- H₂O: {(GetProbability("H2O") >= 0 ? GetProbability("H2O").ToString("F2") : "N/A")}";
 
         interestText.text = data.Overall_Interest ? "Overall Interest: Yes" : "Overall Interest: No";
+
+        if (descriptionText != null)
+            descriptionText.text = data.Description;
+
+        if (planetImage != null && !string.IsNullOrEmpty(data.TextureName)) {
+            string texPath = $"Images/Planets/{data.TextureName}";
+            Texture2D tex = Resources.Load<Texture2D>(texPath);
+            if (tex != null) planetImage.texture = tex;
+            else Debug.LogWarning($"Texture not found at {texPath}");
+        }
+
+        if (spectrumImage != null && !string.IsNullOrEmpty(data.SpectrumName)) {
+            string specPath = $"Images/Spectra/{data.SpectrumName}";
+            Texture2D specTex = Resources.Load<Texture2D>(specPath);
+            if (specTex != null) spectrumImage.texture = specTex;
+            else Debug.LogWarning($"Spectrum image not found at {specPath}");
+        }
     }
 }
