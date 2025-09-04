@@ -1,0 +1,20 @@
+{
+  "Name": "TRAPPIST-1",
+  "Summary": "TRAPPIST-1 is an ultra-cool red dwarf star about 40 light-years away in the constellation Aquarius. It hosts seven Earth-sized planets, several located in the star’s habitable zone.",
+  "Details": {
+    "Spectral_Type": "M8V",
+    "Mass_Solar": 0.089,
+    "Radius_Solar": 0.121,
+    "Effective_Temperature_K": 2516,
+    "Luminosity_Solar": 0.000566,
+    "Age_Gyr": 7.6,
+    "Distance_LY": 40,
+    "Discovery_Description": "First planets discovered in this system were announced in 2017 by the Spitzer and TRAPPIST telescopes. It is one of the most studied exoplanet systems. These planets were discovered using the Transit Method, which detects dips in the star's brightness as planets pass in front of it, revealing their size and orbital period.",
+    "Notable_Characteristics": [
+      "The seven planets are Earth-sized and orbit in compact resonant orbits.",
+      "Three planets (e, f, g) lie within the habitable zone.",
+      "Planets are likely tidally locked to the host star."
+    ],
+    "Artist_Concept_URL": "Images/System/trappist1_system_visual.png"
+  }
+}

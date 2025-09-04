@@ -6,18 +6,20 @@ using System.IO;
 public class PlanetInfoUI : MonoBehaviour {
     [Header("Texts")]
     public TMP_Text nameText;
-    public TMP_Text snrText;
     public TMP_Text labelsText;
     public TMP_Text probsText;
     public TMP_Text interestText;
     public TMP_Text descriptionText;
+    public TMP_Text orbitalText;
+    public TMP_Text semiMajorText;
+    public TMP_Text radiusText;
+    public TMP_Text massText;
+    public TMP_Text equilibriumTempText;
 
     [Header("3D Preview")]
-    // Assign the MeshRenderer of your spinning planet prefab (the MeshRenderer component, not the GameObject)
     public MeshRenderer planetRenderer;
 
     [Header("Spectrum UI")]
-    // Assign the RawImage that should show the spectrum image
     public RawImage spectrumImage;
 
     public void DisplayPlanet(PlanetData data) {
@@ -28,7 +30,11 @@ public class PlanetInfoUI : MonoBehaviour {
 
         // Text fields (safety checks)
         if (nameText) nameText.text = data.Planet_ID;
-        if (snrText) snrText.text = $"SNR: {data.Sim_SNR}";
+        if (orbitalText) orbitalText.text = $"Orbital Period (days): {data.Orbital_Period_days}";
+        if (semiMajorText) semiMajorText.text = $"Semi-Major Axis (AU): {data.Semi_Major_Axis_AU}";
+        if (radiusText) radiusText.text = $"Radius (Earth): {data.Radius_Earth}";
+        if (massText) massText.text = $"Mass (Earth): {data.Mass_Earth}";
+        if (equilibriumTempText) equilibriumTempText.text = $"Equilibrium Temp (K): {data.Equilibrium_Temp_K}";
 
         // Labels convenience
         string GetLabel(string gas) {
@@ -75,10 +81,10 @@ public class PlanetInfoUI : MonoBehaviour {
             string baseName = Path.GetFileNameWithoutExtension(data.Texture);
             Texture2D planetTex = Resources.Load<Texture2D>($"Images/Planets/{baseName}");
             if (planetTex != null) {
-                Material mat = planetRenderer.material; // creates an instance at runtime
-                if (mat.HasProperty("_BaseMap"))      mat.SetTexture("_BaseMap", planetTex);   // URP/HDRP
-                else if (mat.HasProperty("_MainTex")) mat.SetTexture("_MainTex", planetTex);   // Built-in
-                else                                     mat.mainTexture = planetTex;             // fallback
+                Material mat = planetRenderer.material;
+                if (mat.HasProperty("_BaseMap"))      mat.SetTexture("_BaseMap", planetTex);
+                else if (mat.HasProperty("_MainTex")) mat.SetTexture("_MainTex", planetTex);
+                else                                     mat.mainTexture = planetTex;
             } else {
                 Debug.LogWarning($"Planet texture not found at Resources/Images/Planets/{baseName}");
             }
@@ -94,13 +100,13 @@ public class PlanetInfoUI : MonoBehaviour {
                     var c = spectrumImage.color; c.a = 1f; spectrumImage.color = c;
                 } else {
                     Debug.LogWarning($"Spectrum image not found at Resources/Images/Spectra/{baseName}");
-                    // Optional: clear texture to avoid showing stale image
                     spectrumImage.texture = null;
                 }
             } else {
-                // No spectrum specified - clear image
                 spectrumImage.texture = null;
             }
         }
+
+        // TODO: Add planet scaling based on Radius_Earth here later
     }
 }

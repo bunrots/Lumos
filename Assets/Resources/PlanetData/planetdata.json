@@ -1,116 +1,28 @@
 [
   {
     "Planet_ID": "TRAPPIST-1b",
-    "Sim_SNR": 10,
     "Labels": [
       { "key": "CH4", "value": 0 },
       { "key": "O3", "value": 0 },
       { "key": "H2O", "value": 0 }
     ],
     "Probabilities": [
-      { "key": "CH4", "value": 0.05 },
-      { "key": "O3", "value": 0.10 },
-      { "key": "H2O", "value": 0.07 }
+      { "key": "CH4", "value": 0.01 },
+      { "key": "O3", "value": 0.01 },
+      { "key": "H2O", "value": 0.01 }
     ],
     "Overall_Interest": false,
-    "Description": "A hot, tidally locked terrestrial planet orbiting extremely close to its star. JWST observations suggest little to no atmosphere and a dayside temperature near 500 K." ,
+    "Description": "A hot, tidally locked terrestrial planet orbiting extremely close to its star. JWST observations suggest little to no atmosphere and a dayside temperature near 503 K.",
     "Texture": "trappist1b_texture.png",
-    "SpectrumImage": "trappist1b_spectrum.png"
+    "SpectrumImage": "trappist1b_spectrum.png",
+    "Orbital_Period_days": 1.51,
+    "Semi_Major_Axis_AU": 0.0115,
+    "Radius_Earth": 1.12,
+    "Mass_Earth": 1.38,
+    "Equilibrium_Temp_K": 504
   },
-  {
-    "Planet_ID": "TRAPPIST-1d",
-    "Sim_SNR": 8,
-    "Labels": [
-      { "key": "CH4", "value": 0 },
-      { "key": "O3", "value": 0 },
-      { "key": "H2O", "value": 0 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.20 },
-      { "key": "O3", "value": 0.25 },
-      { "key": "H2O", "value": 0.30 }
-    ],
-    "Overall_Interest": false,
-    "Description": "A rocky world smaller than Earth, with estimated equilibrium temperatures (~258 K) and signs of a volatile layer—possibly oceans or ice under a thin atmosphere.",
-    "Texture": "trappist1d_texture.png",
-    "SpectrumImage": "trappist1d_spectrum.png"
-  },
-  {
-    "Planet_ID": "TRAPPIST-1e",
-    "Sim_SNR": 9,
-    "Labels": [
-      { "key": "CH4", "value": 0 },
-      { "key": "O3", "value": 0 },
-      { "key": "H2O", "value": 0 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.15 },
-      { "key": "O3", "value": 0.35 },
-      { "key": "H2O", "value": 0.40 }
-    ],
-    "Overall_Interest": true,
-    "Description": "Earth-sized and situated in the habitable zone. Similar mass and radius to Earth, potentially rocky with an atmosphere not dominated by hydrogen—one of the most promising candidates for habitability.",
-    "Texture": "trappist1e_texture.png",
-    "SpectrumImage": "trappist1e_spectrum.png"
-  },
-  {
-    "Planet_ID": "TRAPPIST-1f",
-    "Sim_SNR": 7,
-    "Labels": [
-      { "key": "CH4", "value": 0 },
-      { "key": "O3", "value": 0 },
-      { "key": "H2O", "value": 0 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.10 },
-      { "key": "O3", "value": 0.20 },
-      { "key": "H2O", "value": 0.35 }
-    ],
-    "Overall_Interest": true,
-    "Description": "A slightly larger planet than Earth, also in the habitable zone. Likely rocky with speculative water content, but atmospheric details remain unknown.",
-    "Texture": "trappist1f_texture.png",
-    "SpectrumImage": "trappist1f_spectrum.png"
-  }
-  ,
   {
     "Planet_ID": "TRAPPIST-1c",
-    "Sim_SNR": 6,
-    "Labels": [
-      { "key": "CH4", "value": 0 },
-      { "key": "O3", "value": 0 },
-      { "key": "H2O", "value": 0 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.03 },
-      { "key": "O3", "value": 0.07 },
-      { "key": "H2O", "value": 0.05 }
-    ],
-    "Overall_Interest": false,
-    "Description": "A hotter, rocky planet possibly resembling Venus. Observations suggest little atmosphere has been detected.",
-    "Texture": "trappist1c_texture.png",
-    "SpectrumImage": "trappist1c_spectrum.png"
-  },
-  {
-    "Planet_ID": "TRAPPIST-1g",
-    "Sim_SNR": 7,
-    "Labels": [
-      { "key": "CH4", "value": 0 },
-      { "key": "O3", "value": 0 },
-      { "key": "H2O", "value": 0 }
-    ],
-    "Probabilities": [
-      { "key": "CH4", "value": 0.12 },
-      { "key": "O3", "value": 0.18 },
-      { "key": "H2O", "value": 0.38 }
-    ],
-    "Overall_Interest": true,
-    "Description": "Larger than Earth and within the habitable zone, TRAPPIST-1g is possibly water-rich and cooler than TRAPPIST-1e.",
-    "Texture": "trappist1g_texture.png",
-    "SpectrumImage": "trappist1g_spectrum.png"
-  },
-  {
-    "Planet_ID": "TRAPPIST-1h",
-    "Sim_SNR": 5,
     "Labels": [
       { "key": "CH4", "value": 0 },
       { "key": "O3", "value": 0 },
@@ -118,12 +30,127 @@
     ],
     "Probabilities": [
       { "key": "CH4", "value": 0.02 },
-      { "key": "O3", "value": 0.04 },
-      { "key": "H2O", "value": 0.09 }
+      { "key": "O3", "value": 0.03 },
+      { "key": "H2O", "value": 0.02 }
+    ],
+    "Overall_Interest": false,
+    "Description": "A hotter, rocky planet possibly resembling Venus. Observations suggest little atmosphere has been detected.",
+    "Texture": "trappist1c_texture.png",
+    "SpectrumImage": "trappist1c_spectrum.png",
+    "Orbital_Period_days": 2.42,
+    "Semi_Major_Axis_AU": 0.0158,
+    "Radius_Earth": 1.10,
+    "Mass_Earth": 1.31,
+    "Equilibrium_Temp_K": 335
+  },
+  {
+    "Planet_ID": "TRAPPIST-1d",
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 1 },
+      { "key": "H2O", "value": 1 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.10 },
+      { "key": "O3", "value": 0.40 },
+      { "key": "H2O", "value": 0.45 }
+    ],
+    "Overall_Interest": false,
+    "Description": "A rocky world smaller than Earth, with estimated equilibrium temperatures (~282 K) and signs of a volatile layer—possibly oceans or ice under a thin atmosphere.",
+    "Texture": "trappist1d_texture.png",
+    "SpectrumImage": "trappist1d_spectrum.png",
+    "Orbital_Period_days": 4.05,
+    "Semi_Major_Axis_AU": 0.0223,
+    "Radius_Earth": 0.79,
+    "Mass_Earth": 0.39,
+    "Equilibrium_Temp_K": 282
+  },
+  {
+    "Planet_ID": "TRAPPIST-1e",
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 1 },
+      { "key": "H2O", "value": 1 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.05 },
+      { "key": "O3", "value": 0.60 },
+      { "key": "H2O", "value": 0.75 }
+    ],
+    "Overall_Interest": true,
+    "Description": "Earth-sized and situated in the habitable zone. Similar mass and radius to Earth, potentially rocky with an atmosphere not dominated by hydrogen—one of the most promising candidates for habitability.",
+    "Texture": "trappist1e_texture.png",
+    "SpectrumImage": "trappist1e_spectrum.png",
+    "Orbital_Period_days": 6.10,
+    "Semi_Major_Axis_AU": 0.0293,
+    "Radius_Earth": 0.92,
+    "Mass_Earth": 0.69,
+    "Equilibrium_Temp_K": 246
+  },
+  {
+    "Planet_ID": "TRAPPIST-1f",
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 1 },
+      { "key": "H2O", "value": 1 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.03 },
+      { "key": "O3", "value": 0.50 },
+      { "key": "H2O", "value": 0.60 }
+    ],
+    "Overall_Interest": true,
+    "Description": "A slightly larger planet than Earth, also in the habitable zone. Likely rocky with speculative water content, but atmospheric details remain unknown.",
+    "Texture": "trappist1f_texture.png",
+    "SpectrumImage": "trappist1f_spectrum.png",
+    "Orbital_Period_days": 9.21,
+    "Semi_Major_Axis_AU": 0.0385,
+    "Radius_Earth": 1.05,
+    "Mass_Earth": 1.04,
+    "Equilibrium_Temp_K": 214
+  },
+  {
+    "Planet_ID": "TRAPPIST-1g",
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 1 },
+      { "key": "H2O", "value": 1 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.04 },
+      { "key": "O3", "value": 0.45 },
+      { "key": "H2O", "value": 0.65 }
+    ],
+    "Overall_Interest": true,
+    "Description": "Larger than Earth and within the habitable zone, TRAPPIST-1g is possibly water-rich and cooler than TRAPPIST-1e.",
+    "Texture": "trappist1g_texture.png",
+    "SpectrumImage": "trappist1g_spectrum.png",
+    "Orbital_Period_days": 12.35,
+    "Semi_Major_Axis_AU": 0.0469,
+    "Radius_Earth": 1.13,
+    "Mass_Earth": 1.32,
+    "Equilibrium_Temp_K": 195
+  },
+  {
+    "Planet_ID": "TRAPPIST-1h",
+    "Labels": [
+      { "key": "CH4", "value": 0 },
+      { "key": "O3", "value": 0 },
+      { "key": "H2O", "value": 0 }
+    ],
+    "Probabilities": [
+      { "key": "CH4", "value": 0.01 },
+      { "key": "O3", "value": 0.01 },
+      { "key": "H2O", "value": 0.05 }
     ],
     "Overall_Interest": false,
     "Description": "The outermost planet of the system, very cold and possibly ice-rich. It may not be able to retain a thick atmosphere.",
     "Texture": "trappist1h_texture.png",
-    "SpectrumImage": "trappist1h_spectrum.png"
+    "SpectrumImage": "trappist1h_spectrum.png",
+    "Orbital_Period_days": 18.77,
+    "Semi_Major_Axis_AU": 0.0619,
+    "Radius_Earth": 0.76,
+    "Mass_Earth": 0.33,
+    "Equilibrium_Temp_K": 169
   }
 ]

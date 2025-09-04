@@ -1,0 +1,58 @@
+[
+  {
+    "Term": "Exoplanet",
+    "Definition": "A planet located outside of our Solar System, orbiting a star other than the Sun."
+  },
+  {
+    "Term": "Habitable Zone",
+    "Definition": "The region around a star where temperatures are suitable for liquid water to exist on a planet’s surface."
+  },
+  {
+    "Term": "Transit Method",
+    "Definition": "A detection method where an exoplanet is observed as it passes in front of its star, causing a small dip in the star’s brightness."
+  },
+  {
+    "Term": "Transmission Spectrum",
+    "Definition": "A measurement of starlight filtered through a planet’s atmosphere during a transit, revealing the presence of molecules such as water, methane, or ozone."
+  },
+  {
+    "Term": "SNR (Signal-to-Noise Ratio)",
+    "Definition": "A measure of data quality; higher SNR means clearer spectral features with less noise."
+  },
+  {
+    "Term": "Orbital Resonance",
+    "Definition": "When planets exert regular, periodic gravitational influence on each other, often stabilizing their orbits. TRAPPIST-1’s planets are in a near-resonant chain."
+  },
+  {
+    "Term": "Tidal Locking",
+    "Definition": "A state where a planet always shows the same face to its star, similar to how the Moon always shows the same face to Earth."
+  },
+  {
+    "Term": "Red Dwarf",
+    "Definition": "A small and relatively cool type of star. TRAPPIST-1 is an ultracool red dwarf, much smaller and cooler than the Sun."
+  },
+  {
+    "Term": "Ultracool Star",
+    "Definition": "A star with a surface temperature below 2,700 °C, like TRAPPIST-1, emitting mostly infrared light."
+  },
+  {
+    "Term": "JWST (James Webb Space Telescope)",
+    "Definition": "A space telescope used to study exoplanet atmospheres and search for biosignatures in transmission spectra."
+  },
+  {
+    "Term": "Biosignature",
+    "Definition": "A substance, element, or phenomenon that may provide scientific evidence of past or present life."
+  },
+  {
+    "Term": "Methane (CH4)",
+    "Definition": "A molecule that can be produced by both biological and non-biological processes, often studied as a possible biosignature."
+  },
+  {
+    "Term": "Ozone (O3)",
+    "Definition": "A molecule formed from oxygen that can indicate the presence of photosynthesis if detected in an exoplanet’s atmosphere."
+  },
+  {
+    "Term": "Water Vapor (H2O)",
+    "Definition": "Water in gaseous form; its detection in an exoplanet’s atmosphere is a key indicator of potential habitability."
+  }
+]

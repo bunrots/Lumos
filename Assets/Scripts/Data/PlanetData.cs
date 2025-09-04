@@ -25,4 +25,10 @@ public class PlanetData {
     public string Description;
     public string Texture;        // e.g. "trappist1e_texture" (no extension necessary)
     public string SpectrumImage;  // e.g. "trappist1e_spectrum" (no extension necessary)
+
+    public float Orbital_Period_days;
+    public float Semi_Major_Axis_AU;
+    public float Radius_Earth;
+    public float Mass_Earth;
+    public float Equilibrium_Temp_K;
 }
