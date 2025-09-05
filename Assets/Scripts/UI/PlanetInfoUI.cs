@@ -107,6 +107,25 @@ public class PlanetInfoUI : MonoBehaviour {
             }
         }
 
-        // TODO: Add planet scaling based on Radius_Earth here later
+        // --- Planet scaling based on Radius_Earth ---
+        // Use static largest planet radius from PlanetManager for scaling reference
+        float largestPlanetRadius = PlanetManager.LargestPlanetRadius;
+        // Maximum scale for the largest planet (Unity units)
+        float maxPlanetScale = 1.0f;
+        if (planetRenderer != null) {
+            // Safety check for null/zero largestPlanetRadius
+            if (largestPlanetRadius > 0f) {
+                // Only scale down smaller planets
+                if (data.Radius_Earth < largestPlanetRadius) {
+                    float scaleFactor = (data.Radius_Earth / largestPlanetRadius) * maxPlanetScale;
+                    planetRenderer.transform.localScale = Vector3.one * scaleFactor;
+                } else {
+                    planetRenderer.transform.localScale = Vector3.one * maxPlanetScale; // largest stays at max
+                }
+            } else {
+                // Fallback: set to max scale if largest radius is not set
+                planetRenderer.transform.localScale = Vector3.one * maxPlanetScale;
+            }
+        }
     }
 }

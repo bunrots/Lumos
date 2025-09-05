@@ -6,6 +6,8 @@ public class PlanetManager : MonoBehaviour {
 
     private PlanetData[] planets;
 
+    public static float LargestPlanetRadius;
+
     void Start() {
         LoadPlanets();
     }
@@ -22,6 +24,15 @@ public class PlanetManager : MonoBehaviour {
         planets = planetList.planets;
 
         if (planets != null && planets.Length > 0) {
+            float maxRadius = 0f;
+            foreach (var planet in planets) {
+                if (planet.Radius_Earth > maxRadius) {
+                    maxRadius = planet.Radius_Earth;
+                }
+            }
+            LargestPlanetRadius = maxRadius;
+            Debug.Log($"Largest planet radius found: {maxRadius}");
+
             Debug.Log($"Loaded planet {planets[0].Planet_ID} with description: {planets[0].Description}");
             if (ui != null)
                 ui.DisplayPlanet(planets[0]);

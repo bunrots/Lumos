@@ -46,6 +46,15 @@ public class PlanetListUI : MonoBehaviour
                         if (mat.HasProperty("_BaseMap")) mat.SetTexture("_BaseMap", tex);
                         else if (mat.HasProperty("_MainTex")) mat.SetTexture("_MainTex", tex);
                         else mat.mainTexture = tex;
+
+                        // Scale preview sphere based on planet radius relative to largest planet
+                        float maxScale = 1.0f;
+                        float scale = maxScale;
+                        if (planet.Radius_Earth < PlanetManager.LargestPlanetRadius)
+                        {
+                            scale = (planet.Radius_Earth / PlanetManager.LargestPlanetRadius) * maxScale;
+                        }
+                        preview.previewRenderer.transform.localScale = new Vector3(scale, scale, scale);
                     }
                     else
                     {
