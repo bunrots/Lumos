@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SpinPlanet : MonoBehaviour
 {
-    public float rotationSpeed = 30f;
+    public float rotationSpeed = 15f;
 
     void Update()
     {
