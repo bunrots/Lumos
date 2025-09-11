@@ -16,8 +16,8 @@
     "Definition": "A measurement of starlight filtered through a planet’s atmosphere during a transit, revealing the presence of molecules such as water, methane, or ozone."
   },
   {
-    "Term": "SNR (Signal-to-Noise Ratio)",
-    "Definition": "A measure of data quality; higher SNR means clearer spectral features with less noise."
+    "Term": "SNR",
+    "Definition": "Signal-to-Noise Ratio, a measure of data quality; higher SNR means clearer spectral features with less noise."
   },
   {
     "Term": "Orbital Resonance",
@@ -36,8 +36,8 @@
     "Definition": "A star with a surface temperature below 2,700 °C, like TRAPPIST-1, emitting mostly infrared light."
   },
   {
-    "Term": "JWST (James Webb Space Telescope)",
-    "Definition": "A space telescope used to study exoplanet atmospheres and search for biosignatures in transmission spectra."
+    "Term": "JWST",
+    "Definition": "The James Webb Space Telescope, a space telescope used to study exoplanet atmospheres and search for biosignatures in transmission spectra."
   },
   {
     "Term": "Biosignature",

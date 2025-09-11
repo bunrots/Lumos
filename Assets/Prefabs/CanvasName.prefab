@@ -222,7 +222,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &2143095557195091944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,13 +253,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  canvasRect: {fileID: 0}
   labelText: {fileID: 0}
-  localOffset: {x: 0, y: 2, z: 0}
-  scaleWithDistance: 1
-  minScale: 0.6
-  maxScale: 1.4
-  scaleDistanceFactor: 0.02
-  smoothing: 10
+  screenOffset: {x: 0, y: 20}
+  showLabels: 1
+  minVisibleDistance: 5
 --- !u!1 &8660148206656796692
 GameObject:
   m_ObjectHideFlags: 0

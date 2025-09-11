@@ -62,18 +62,22 @@ public class SystemInfoUI : MonoBehaviour
 
         if (data.Details != null)
         {
-            if (spectralTypeText) spectralTypeText.text = $"Spectral Type: {data.Details.Spectral_Type}";
-            if (massText) massText.text = $"Mass: {data.Details.Mass_Solar} M☉";
-            if (radiusText) radiusText.text = $"Radius: {data.Details.Radius_Solar} R☉";
-            if (tempText) tempText.text = $"Temperature: {data.Details.Effective_Temperature_K} K";
-            if (luminosityText) luminosityText.text = $"Luminosity: {data.Details.Luminosity_Solar} L☉";
-            if (ageText) ageText.text = $"Age: {data.Details.Age_Gyr} Gyr";
-            if (distanceText) distanceText.text = $"Distance: {data.Details.Distance_LY} LY";
-            if (discoveryText) discoveryText.text = data.Details.Discovery_Description;
+            if (spectralTypeText) spectralTypeText.text = $"<color=#FFA500><b>Spectral Type:</b></color> <color=#FFFFFF>{data.Details.Spectral_Type}</color>";
+            if (massText) massText.text = $"<color=#FFA500><b>Mass:</b></color> <color=#FFFFFF>{data.Details.Mass_Solar} M☉</color>";
+            if (radiusText) radiusText.text = $"<color=#FFA500><b>Radius:</b></color> <color=#FFFFFF>{data.Details.Radius_Solar} R☉</color>";
+            if (tempText) tempText.text = $"<color=#FFA500><b>Temperature:</b></color> <color=#FFFFFF>{data.Details.Effective_Temperature_K} K</color>";
+            if (luminosityText) luminosityText.text = $"<color=#FFA500><b>Luminosity:</b></color> <color=#FFFFFF>{data.Details.Luminosity_Solar} L☉</color>";
+            if (ageText) ageText.text = $"<color=#FFA500><b>Age:</b></color> <color=#FFFFFF>{data.Details.Age_Gyr} Gyr</color>";
+            if (distanceText) distanceText.text = $"<color=#FFA500><b>Distance:</b></color> <color=#FFFFFF>{data.Details.Distance_LY} LY</color>";
+
+            if (discoveryText)
+            {
+                discoveryText.text = $"<color=#FFA500><b>Discovery & Transit Method:</b></color>\n<color=#FFFFFF>{data.Details.Discovery_Description}</color>";
+            }
 
             if (notableText)
             {
-                notableText.text = "Notable Characteristics:\n";
+                notableText.text = "<color=#FFA500><b>Notable Characteristics:</b></color>\n";
                 if (data.Details.Notable_Characteristics != null)
                 {
                     foreach (string characteristic in data.Details.Notable_Characteristics)

@@ -129,4 +129,10 @@ public class OrbitCamera : MonoBehaviour
             distance = Mathf.Clamp(newDistance, minDistance, maxDistance);
         }
     }
+
+    public void ToggleSmooth()
+    {
+        useSmoothTransition = !useSmoothTransition;
+        Debug.Log("Camera smooth transition is now: " + useSmoothTransition);
+    }
 }

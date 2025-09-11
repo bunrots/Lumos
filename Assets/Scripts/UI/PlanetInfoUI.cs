@@ -22,19 +22,27 @@ public class PlanetInfoUI : MonoBehaviour {
     [Header("Spectrum UI")]
     public RawImage spectrumImage;
 
+    public PlanetSizeComparison sizeComparisonPrefabInstance;
+
     public void DisplayPlanet(PlanetData data) {
         if (data == null) {
             Debug.LogError("PlanetData passed is null!");
             return;
         }
 
-        // Text fields (safety checks)
-        if (nameText) nameText.text = data.Planet_ID;
-        if (orbitalText) orbitalText.text = $"Orbital Period (days): {data.Orbital_Period_days}";
-        if (semiMajorText) semiMajorText.text = $"Semi-Major Axis (AU): {data.Semi_Major_Axis_AU}";
-        if (radiusText) radiusText.text = $"Radius (Earth): {data.Radius_Earth}";
-        if (massText) massText.text = $"Mass (Earth): {data.Mass_Earth}";
-        if (equilibriumTempText) equilibriumTempText.text = $"Equilibrium Temp (K): {data.Equilibrium_Temp_K}";
+        // Text fields (safety checks) with TMP rich text formatting
+        if (nameText)
+            nameText.text = data.Planet_ID;
+        if (orbitalText)
+            orbitalText.text = $"<size=22><color=#FFA500><b>Orbital Period (days)</b></color></size>\n<size=24>{data.Orbital_Period_days}</size>";
+        if (semiMajorText)
+            semiMajorText.text = $"<size=22><color=#FFA500><b>Semi-Major Axis (AU)</b></color></size>\n<size=24>{data.Semi_Major_Axis_AU}</size>";
+        if (radiusText)
+            radiusText.text = $"<size=22><color=#FFA500><b>Radius (Earth)</b></color></size>\n<size=24>{data.Radius_Earth}</size>";
+        if (massText)
+            massText.text = $"<size=22><color=#FFA500><b>Mass (Earth)</b></color></size>\n<size=24>{data.Mass_Earth}</size>";
+        if (equilibriumTempText)
+            equilibriumTempText.text = $"<size=22><color=#FFA500><b>Equilibrium Temp (K)</b></color></size>\n<size=24>{data.Equilibrium_Temp_K}</size>";
 
         // Labels convenience
         string GetLabel(string gas) {
@@ -58,22 +66,27 @@ public class PlanetInfoUI : MonoBehaviour {
         }
 
         if (labelsText)
-            labelsText.text = "Detected Gases:\n" +
-                              $"- CH₄: {GetLabel("CH4")}\n" +
-                              $"- O₃: {GetLabel("O3")}\n" +
-                              $"- H₂O: {GetLabel("H2O")}";
+            labelsText.text =
+                "<size=22><color=#FFA500><b>Detected Gases</b></color></size>\n" +
+                $"- <b>CH₄</b>: {GetLabel("CH4")}\n" +
+                $"- <b>O₃</b>: {GetLabel("O3")}\n" +
+                $"- <b>H₂O</b>: {GetLabel("H2O")}";
 
         if (probsText) {
             float pCh4 = GetProb("CH4");
             float pO3  = GetProb("O3");
             float pH2o = GetProb("H2O");
-            probsText.text = "Probabilities:\n" +
-                             $"- CH₄: {(pCh4 >= 0 ? pCh4.ToString("F2") : "N/A")}\n" +
-                             $"- O₃: {(pO3  >= 0 ? pO3.ToString("F2")  : "N/A")}\n" +
-                             $"- H₂O: {(pH2o >= 0 ? pH2o.ToString("F2") : "N/A")}";
+            probsText.text =
+                "<size=22><color=#FFA500><b>Probabilities</b></color></size>\n" +
+                $"- <b>CH₄</b>: <size=24>{(pCh4 >= 0 ? pCh4.ToString("F2") : "N/A")}</size>\n" +
+                $"- <b>O₃</b>: <size=24>{(pO3  >= 0 ? pO3.ToString("F2")  : "N/A")}</size>\n" +
+                $"- <b>H₂O</b>: <size=24>{(pH2o >= 0 ? pH2o.ToString("F2") : "N/A")}</size>";
         }
 
-        if (interestText) interestText.text = data.Overall_Interest ? "Overall Interest: Yes" : "Overall Interest: No";
+        if (interestText)
+            interestText.text = data.Overall_Interest
+                ? "<size=22><color=#FFA500><b>Overall Interest</b></color></size>\n<b>Yes</b>"
+                : "<size=22><color=#FFA500><b>Overall Interest</b></color></size>\n<b>No</b>";
         if (descriptionText) descriptionText.text = data.Description;
 
         // --- Apply planet texture to the 3D preview renderer ---
@@ -127,5 +140,8 @@ public class PlanetInfoUI : MonoBehaviour {
                 planetRenderer.transform.localScale = Vector3.one * maxPlanetScale;
             }
         }
+
+        if (sizeComparisonPrefabInstance != null)
+            sizeComparisonPrefabInstance.UpdateComparison(data.Radius_Earth, data.Planet_ID);
     }
 }
